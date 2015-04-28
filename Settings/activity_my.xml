@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/Background">
+
+
+    <Button android:id="@+id/Twitter_settings"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="center"
+        android:background="@drawable/log_in_twitter_button"/>
+
+    <Button android:id="@+id/Facebook_settings"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/log_in_facebook_button"/>
+
+    <Button android:id="@+id/Change_Password"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/change_password_button"/>
+
+    <Button android:id="@+id/Logout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/log_out_button"/>
+
+    <Button android:id="@+id/Deactivate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/deactivate_button" />
+
+</LinearLayout>

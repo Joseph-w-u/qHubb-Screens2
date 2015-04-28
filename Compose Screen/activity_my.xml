@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/Background">
+
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:background="@drawable/Composition_Field"
+        android:hint="@string/edit_message"
+        android:layout_below="@+id/Compose"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView android:id="@+id/Compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:text="Compose"
+        android:textColor="@color/Black"
+        android:layout_alignBaseline="@+id/cancel_button"
+        android:layout_alignBottom="@+id/cancel_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/publish_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/Publish_Button_On"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/Cancel_Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+    <Button
+        android:id="@+id/FB"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight = "0.8"
+        android:background="@drawable/Facebook_Toggle_On"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/Twitter"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight = "0.8"
+        android:background="@drawable/Twitter_Toggle_On"
+        android:layout_below="@+id/edit_message"
+        android:layout_toRightOf="@+id/FB"
+        android:layout_toEndOf="@+id/FB"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/queue_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight = "0.8"
+        android:background="@drawable/Queue_Toggle_On"
+        android:layout_alignTop="@+id/Twitter"
+        android:layout_toLeftOf="@+id/Photo"
+        android:layout_toStartOf="@+id/Photo"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/Photo"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight = "0.8"
+        android:background="@drawable/Camera_Toggle_On"
+        android:layout_alignTop="@+id/queue_button"
+        android:layout_alignRight="@+id/publish_button"
+        android:layout_alignEnd="@+id/publish_button"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>
+</RelativeLayout>
